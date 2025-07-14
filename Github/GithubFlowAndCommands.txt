@@ -1,0 +1,71 @@
+# 1. Set username (one-time)
+git config --global user.name "Your Name"
+# 👉 Tells Git who you are
+
+# 2. Set email (one-time)
+git config --global user.email "you@example.com"
+# 👉 Associates commits with your email ID
+
+# 3. Initialize Git repo in your project folder
+git init
+# 👉 Starts tracking your project with Git
+
+# 4. Add all files to staging
+git add .
+# 👉 Prepares your files for commit ('.' = all files)
+
+# 5. Check file status
+git status
+# 👉 Shows what's added, modified, or untracked
+
+# 6. Commit your changes
+git commit -m "Your commit message"
+# 👉 Saves a snapshot with a message
+
+# 7. Add remote GitHub repo
+git remote add origin https://github.com/username/repo.git
+# 👉 Links your local project to a GitHub repo
+
+# 8. Rename branch to main (if needed)
+git branch -M main
+# 👉 Renames current branch to 'main'
+
+# 9. Push code to GitHub (first time)
+git push -u origin main
+# 👉 Uploads your code to GitHub and tracks the branch
+
+# 10. Pull latest changes from GitHub
+git pull origin main
+# 👉 Downloads updates from GitHub into your code
+
+# 11. Clone a GitHub repo
+git clone https://github.com/username/repo.git
+# 👉 Copies a GitHub repo into your local system
+
+# 12. Check commit history
+git log --oneline
+# 👉 Shows list of commits in one line per commit
+
+# 13. Create a new branch
+git checkout -b new-feature
+# 👉 Creates & switches to a new branch
+
+# 14. Switch branch
+git checkout main
+# 👉 Changes to the main branch
+
+# 15. Merge a branch into current
+git merge new-feature
+# 👉 Combines another branch into current branch
+
+# 16. Push new branch to GitHub
+git push origin new-feature
+# 👉 Uploads the new branch to GitHub
+
+# 17. Delete local branch
+git branch -d old-branch
+# 👉 Deletes a branch from your system
+
+# 18. Delete remote branch
+git push origin --delete old-branch
+# 👉 Deletes a branch from GitHub
