@@ -1,0 +1,136 @@
+                        Linux Tasks
+
+
+    1.  Create a directory named devops in your home directory.
+	2.	Inside devops, create two subdirectories: projects and scripts.
+	3.	Navigate to the projects directory and create an empty file named project1.txt.
+	4.	Write the text “Linux is powerful” into project1.txt.
+	5.	Copy project1.txt to the scripts directory.
+	6.	Rename the copied file in scripts to linux_notes.txt.
+	7.	Move the linux_notes.txt file back to the projects directory.
+	8.	Delete the original project1.txt file.
+	9.	Create a hidden file named .config in the devops directory.
+	10.	List all files and directories (including hidden ones) in the devops directory.
+	11.	Display the contents of linux_notes.txt using a command.
+	12.	Append the line “Shell scripting is fun” to linux_notes.txt.
+	13.	Create a new empty file named temp.log and then remove it.
+	14.	Change the name of the scripts directory to automation.
+
+
+
+    1.  Open a new file called notes.txt using the vi or nano editor.
+	2.	Insert the text “This is my first note” into the file.
+	3.	Save and exit the editor.
+	4.	Open the notes.txt file again and append a new line: “Learning Linux editors”.
+	5.	Delete the second line in the file.
+	6.	Copy the first line and paste it below the second line.
+	7.	Undo the last change you made.
+	8.	Search for the word “Linux” inside the file.
+	9.	Replace the word “note” with “document” throughout the file.
+	10.	Enable line numbers while editing the file.
+	11.	Create a new file named tasklist.txt and write at least 3 bullet points.
+	12.	Save the file without exiting the editor.
+	13.	Move the third line above the first line.
+	14.	Use visual mode (in vim) to select and delete multiple lines.
+	15.	Open multiple files (file1.txt, file2.txt) in a single vim session.
+	16.	Split the screen in vim to view two files side by side.
+	17.	Create and save a file in read-only mode using the editor.
+	18.	Enable syntax highlighting in vim for a .sh file.
+	19.	Record and play back a macro to insert the same text in multiple lines.
+	20.	Exit the editor without saving changes
+
+
+
+
+
+Links for advanced commands :- 
+     
+ https://www.geeksforgeeks.org/user-management-in-linux/
+ https://phoenixnap.com/kb/user-management-linux 
+https://www.geeksforgeeks.org/set-file-permissions-linux/  :- Linux permissions Documentation
+https://www.geeksforgeeks.org/set-file-permissions-linux/ set file permissions in linux Doc
+               
+
+            1. 	How do you create a new user in Linux?
+	2.	What is the purpose of the /etc/passwd file?
+	3.	What does the /etc/shadow file contain?
+	4.	How do you set or change a user password?
+	5.	How do you delete a user from the system?
+	6.	How do you modify an existing user’s properties?
+	7.	What command is used to lock and unlock user accounts?
+	8.	How do you force a user to change their password on next login?
+	9.	How do you check when a user account will expire?
+	10.	How do you create a user with a specific home directory?
+	11.	What is the use of the /etc/skel directory?
+	12.	How do you change the default shell for a user?
+	13.	How do you create a group in Linux?
+	14.	How do you add or remove a user from a group?
+	15.	How can you view group membership of a user?
+	16.	What is the difference between primary group and supplementary 
+                        groups?
+	17.	How do you change a user’s UID or a group’s GID?
+	18.	How do you find all users on the system?
+	19.	How do you find inactive or locked users?
+	20.	How do you set user account expiration?
+	21.	How do you set password policies (like minimum/maximum age)?
+	22.	How can you prevent a user from logging in without deleting their 
+                        account?                       
+	23.	How do you switch to another user account from the command line?
+	24.	What is the difference between su and sudo?
+	25.	How do you give a user sudo access?
+	26.	How can you restrict a user to only execute certain commands with sudo?
+	27.	How do you create a user without a home directory?
+	28.	How do you find users who are currently logged in?
+	29.	How do you track the login history of a user?
+	30.	What logs help in auditing user login activity?
+
+
+            31.       What is the use of execute permission for user in directory ?
+            32.       Find the different types of the files, Describe the file types in linux.
+            33. Difference between hard link and softlink. In linux.
+            34. Create a hard link from a file and check if you are able to manage the original      file using hard link.
+35. 
+
+User permission tasks:- date:-23-4-25
+
+1. How do you give read, write, and execute permissions to the owner of a file but only read permissions to the group and others?
+	2.	What command will you use to change the owner of a file to user john and the group to devs?
+	3.	How can you find all files in /home that have 777 permissions?
+	4.	What is the difference between chmod 755 and chmod 775?
+	5.	How do you remove write permissions for the group from a file named report.txt?
+	6.	How do you check the current permissions of all files in a directory?
+	7.	What permission is required to delete a file from a directory?
+	8.	If a file has permission -rwxr--r--, who can execute the file?
+	9.	How can you recursively change all .sh files in a directory to be executable by everyone?
+	10.	What’s the significance of the +x permission on a directory?
+	11.	How can you make a script readable and writable only by the owner?
+	12.	How do you give full permissions to everyone on a directory named public?
+	13.	What command do you use to set the setuid bit on a binary file?
+	14.	How do you prevent a user from deleting a file even if they have write access to the directory?
+	15.	How can you allow a user to read and write a file, but not execute it?
+
+Hard link and soft link
+
+
+1.	Create a hard link for a file named file1.txt and name the link file1_hard.
+	2.	Create a soft link for the same file1.txt and name it file1_soft.
+	3.	How can you verify whether a file is a hard link or a soft link?
+	4.	If the original file file1.txt is deleted, what happens to:
+	•	file1_hard?
+	•	file1_soft?
+	5.	How do you find the number of hard links associated with a file?
+	6.	Can you create a hard link for a directory? Why or why not?
+	7.	How can you find all symbolic links in a given directory?
+	8.	Modify the content of a file using a soft link. What happens to the original file?
+	9.	If you change the permissions of a file via a hard link, what happens to the original file?
+	10.	Create a soft link using a relative path instead of an absolute path.
+	11.	What happens when you move the original file that a soft link points to? Test it.
+	12.	Can a hard link exist across different filesystems? Why or why not?
+	13.	Create multiple hard links to a file and then delete the original file. What remains?
+	14.	How do you remove a symbolic link without deleting the original file?
+	15.	Use ls -li to list inode numbers. Explain the difference in inode numbers for:
+	•	original file
+	•	hard link
+	•	soft link
+
+                        
