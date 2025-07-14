@@ -1,0 +1,11 @@
+What we are going to learn in AWS
+
+
+
+We are going to work for solutions architect in AWS.
+
+Create Three tier architecture.
+
+Certificates provider ACM.
+
+Certificates : SSL TLS required to convert http to https

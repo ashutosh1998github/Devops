@@ -1,0 +1,49 @@
+AWS Task
+ 
+
+1. Write a shell script and enable through system d script.       
+Ans:- systemctl start service name, :- systemctl enable service name,
+ :- systemctl stop service name, 
+
+2. Difference between apache and Nginx
+3. What are services in AWs that represents Paas, Iaas, Saas.
+Date:- 20-5-2025
+1. What is SSH service and how to configure it.
+Date:- 21-5-20251.recover your lost keys for an EC2 instance.
+2. Create a volume in aws.
+3 what does spot request do why it is used?
+4. Difference between dedicated host and dedicated instance.
+5. Difference between MBR and GPT in (File system).
+6. How to make a permanent partition.
+7. Difference between security group and NACL
+8. NAT gateway.
+
+Date 6/10/25
+VPC Peering
+
+
+Creat ea vpc create six private subnets, create one internet gateway and attach the internet gateway and make the subnet public and check if  you are able to access the internet or not
+Create an instance in mumbai VPC and create an instance in South America and perform ping test, SSH test and RDB test.
+Install Flask application on EC2 instance.
+
+Date 6/11/25 
+Load balancer
+
+Create a highly available fault tolerant website using EC2 and VPC
+
+Please read about success and error codes  
+Success code ranges 
+ 200 - 205, 
+ 300 - 305,
+ 400 - 405,
+ 500 - 505
+Technically said 4xx 5xx.
+Create a Loadbalancer.
+
+
+Create a auto scaling group
+Read about the auto scaling group policies
+Difference between application load balancer and network load balancer.
+Host a website using S3 bucket.(Static website hosting).
+What are the different cost components in s3 bucket.
+read about Bucket policy, CORS.
