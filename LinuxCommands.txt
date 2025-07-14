@@ -1,0 +1,82 @@
+Linux Commands
+
+                         :set nu               :- create temporary line number in Vim editor
+
+Give permanent line number inside the ubuntu linux editor
+
+
+ Linux administration
+
+Users in linux 
+There are three users in linux 
+Root user, one who has all the access to all the users and their files.
+
+System users, this users performs particular task for the root user or assigned by the root user.
+
+Local users, this are the users created by the root user. To add or create new user this is the command:-  adduser username   
+
+To check how many user are there in the system use command    :-          cat  /etc/passwd 
+
+This shows all the users in the system.
+
+Is you want to switch user use su - username  
+
+To create user this is the command adduser username
+
+To set or change the current user password use command:- passwd 
+
+And if you are in a root user the command will be passwd username.
+
+The command to lock and unlock the user is 
+
+sudo usermod -L username  and to unlock sudo usermod -U testuser
+
+To check weather the user is locked or not (Status)
+ sudo passwd -S username 
+
+To modify existing user properties
+ sudo usermod -l new_username old_username
+To change users home directory
+
+ sudo usermod -d /new/home/path -m username
+-d: sets the new home dir.
+-m: moves content from old to new home dir
+
+Change users shell sudo usermod -s /bin/bash username.
+
+
+
+Force user to change the password in next login command is 
+sudo chage -d 0 username
+
+-d 0 sets the last password change date to 0 (which means "the password has expired").The user will be prompted to change their password the next time they log in.
+It will show this message to user 
+
+You are required to change your password immediately (password aged)
+
+To check status of users password sudo chage -l username
+It will show like this
+ 
+Last password change                                   : Apr 17, 2025
+Password expires                                        : May 17, 2025
+Password inactive                                       : never
+Account expires                                         : never
+Minimum number of days between password change         : 0
+Maximum number of days between password change         : 90
+Number of days of warning before password expires      : 7
+
+To disable password expiry after a change, you can run:
+sudo chage -M 99999 username This will set the maximum password age to 99999 days 
+To check date of the command will be date
+
+
+
+
+
+
+
+
+
+
+
+cd
